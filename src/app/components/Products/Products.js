@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import ProductRow from "./ProductRow";
 import s1 from "./products.module.scss";
 import s2 from "./demo.module.scss";
+import ProductRow from "./ProductRow";
 
 const Products = () => {
   //   console.log("style ", styles);

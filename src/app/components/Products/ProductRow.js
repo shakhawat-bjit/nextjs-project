@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ProductRow = ({ props }) => {
   // console.log("props ",props)
   return (
@@ -5,6 +7,7 @@ const ProductRow = ({ props }) => {
       <td>{props?.title}</td>
       <td>
         <button onClick={() => alert(props?.title)}>Order</button>
+        <Link href="/components/products/details">Details</Link>
       </td>
     </tr>
   );

@@ -4,27 +4,13 @@ import styles from "./page.module.scss";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import Products from "./components/Products/Products";
+import Products from "./components/products/Products";
 
 export default function Home() {
   const router = useRouter();
   const navigate = (route) => {
     router.push(route);
   };
-
-  // const [products, setProducts] = useState([]);
-  // useEffect(() => {
-  //   fetch("https://dummyjson.com/products")
-  //     .then((res) => {
-  //       return res.json();
-  //     })
-  //     .then((data) => {
-  //       console.log("data?.products ", data?.products);
-  //       setProducts(data?.products);
-  //     });
-  // }, []);
-
-  // console.log("products ---- ", products)
 
   return (
     <main

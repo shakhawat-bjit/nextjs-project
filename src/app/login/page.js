@@ -5,10 +5,7 @@ const Login = () => {
   const router = useRouter();
   return (
     <div>
-      <p>This is Log in</p>
-      <button onClick={() => alert("Successfully Logged in")}>Log In</button>
-      <br />
-      <button onClick={() => router.push("/")}> Go to Home </button>
+      <h2>This is from common login (page)</h2>
     </div>
   );
 };
