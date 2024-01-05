@@ -1,8 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import s1 from "./products.module.scss";
-import s2 from "./demo.module.scss";
-import ProductRow from "./ProductRow";
+import ProductRow from "./productRow/page";
 
 const Products = () => {
   //   console.log("style ", styles);
@@ -19,10 +18,7 @@ const Products = () => {
   }, []);
 
   return (
-    <div
-      //   className={s1.myDesign}
-      className={s2.myDesign}
-    >
+    <div className={s1.myDesign}>
       <h1>Products</h1>
       <table>
         <thead>

@@ -7,7 +7,9 @@ const ProductRow = ({ props }) => {
       <td>{props?.title}</td>
       <td>
         <button onClick={() => alert(props?.title)}>Order</button>
-        <Link href="/components/products/details">Details</Link>
+        <Link href={`/product/${props?.id}`}>Details</Link>
+        <Link href={`/product/wwt/wrwer/${props?.id}`}>All Segemnt</Link>
+        {/* <Link href={`components/product/${props?.id}`}>Details</Link> */}
       </td>
     </tr>
   );

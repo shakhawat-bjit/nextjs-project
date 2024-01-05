@@ -9,6 +9,7 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.logIn}>
       <h2>This is Log in Layout</h2>
+      <Link href="/">Go back to Home</Link>
       <ul>
         <li>
           <Link

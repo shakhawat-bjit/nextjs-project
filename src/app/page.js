@@ -4,7 +4,7 @@ import styles from "./page.module.scss";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import Products from "./components/products/Products";
+import Products from "./component/products/page";
 
 export default function Home() {
   const router = useRouter();
