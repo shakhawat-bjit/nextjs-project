@@ -23,7 +23,9 @@ export default function Home() {
 
       <br />
       <br />
-      <Link href="user-details">User Details</Link>
+      <Link href="location-details">location Details</Link>
+      <br />
+      <Link href="users">User </Link>
       <br />
       <Link href="image-test">Image Test</Link>
       <br />
