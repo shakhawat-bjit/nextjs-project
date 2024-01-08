@@ -20,8 +20,12 @@ export default function Home() {
       <button onClick={() => navigate("/login")}>Login Page</button>
       <br />
       <Link href="about">About Page</Link>
-
       <button onClick={() => navigate("/about")}>About Page</button>
+
+      <br />
+      <Link href="image-test">Image Test</Link>
+      <br />
+      <Link href="font-test">Font Test</Link>
       <Products />
     </main>
   );

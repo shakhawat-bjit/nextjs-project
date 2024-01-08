@@ -3,18 +3,33 @@ import { useEffect, useState } from "react";
 import s1 from "./products.module.scss";
 import ProductRow from "./productRow/page";
 
+const fetchProducts = async (url) => {
+  const response = await fetch(url);
+  // console.log("response ", response);
+  const data = await response.json();
+  // console.log("data ", data);
+  return data.products;
+};
+
 const Products = () => {
-  //   console.log("style ", styles);
   const [products, setProducts] = useState([]);
+
   useEffect(() => {
-    fetch("https://dummyjson.com/products")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log("data?.products ", data?.products);
-        setProducts(data?.products);
-      });
+    // fetch("https://dummyjson.com/products")
+    //   .then((res) => {
+    //     return res.json();
+    //   })
+    //   .then((data) => {
+    //     console.log("data?.products ", data?.products);
+    //     setProducts(data?.products);
+    //   });
+
+    let fetchFunction = async () => {
+      const products = await fetchProducts("https://dummyjson.com/products");
+      setProducts(products);
+    };
+
+    fetchFunction();
   }, []);
 
   return (
