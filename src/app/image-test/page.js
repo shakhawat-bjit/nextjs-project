@@ -13,7 +13,6 @@ const Test = () => {
       <br />
       <img src={darkImage?.src} alt="A Dark Image" />
       <br />
-
       <h2>External Image</h2>
       {/* need to comfigure for Image component */}
       <Image
@@ -23,7 +22,6 @@ const Test = () => {
         style={{ border: "1px solid red" }}
       />
       <br />
-
       {/* no need to configure for img tag */}
       <img
         src="https://c0.wallpaperflare.com/preview/789/637/166/backlit-chiemsee-dawn-desktop-backgrounds.jpg"

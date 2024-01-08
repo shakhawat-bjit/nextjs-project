@@ -7,7 +7,7 @@ const NotFound = ({ params }) => {
         <span style={{ color: "red" }}>
           {' "'}about/
           {params?.notFound?.map((x) => (
-            <span>{`${x}/`}</span>
+            <span key={x}>{`${x}/`}</span>
           ))}
           {'" '}
         </span>

@@ -10,7 +10,7 @@ const ProductDetails = ({ params }) => {
       <h2>This is all segements </h2>
       <div>
         {params?.allSegments?.map((param) => (
-          <span>{param}, </span>
+          <span key={param}>{param}, </span>
         ))}
       </div>
       <br />
